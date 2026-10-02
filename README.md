@@ -35,6 +35,14 @@ Plugins are not allowed to enable a status line themselves, so this command does
 - After `/rename`, the bar may not change until the next refresh. Send a message or wait for the 30 s refresh interval.
 - Requires `python3` on your `PATH` (macOS ships one with the Xcode Command Line Tools). On Windows, install Python 3 and make sure `python3` resolves.
 
+## Privacy
+
+Session Bar collects, stores and transmits nothing.
+
+- The status-line script reads the JSON that Claude Code pipes to it on stdin (session name, working directory, model, context usage, cost, rate limits). If there is no session name it also reads the tail of the local session transcript file named in that JSON, only to find the AI-generated title.
+- Everything is processed on your machine and printed to the status line. The script makes no network requests, writes no files and has no telemetry.
+- `/session-bar:setup` copies the script to `~/.claude/session-bar/session-bar.py` and adds a `statusLine` entry to `~/.claude/settings.json`. It changes nothing else.
+
 ## Uninstall
 
 Remove the `statusLine` key from `~/.claude/settings.json`, delete `~/.claude/session-bar/`, then:
