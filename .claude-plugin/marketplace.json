@@ -1,0 +1,12 @@
+{
+  "name": "session-bar-marketplace",
+  "description": "Session Bar: a Claude Code status line that always shows the session name, context usage, cost and rate limits.",
+  "owner": { "name": "Tiger Wang" },
+  "plugins": [
+    {
+      "name": "session-bar",
+      "source": "./plugins/session-bar",
+      "description": "Status line showing session name, context %, cost and rate limits."
+    }
+  ]
+}

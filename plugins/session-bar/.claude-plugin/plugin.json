@@ -1,0 +1,11 @@
+{
+  "name": "session-bar",
+  "displayName": "Session Bar",
+  "version": "0.1.0",
+  "description": "Status line that always shows the session name, context usage, cost and rate limits — so you can recognise a session the moment you switch to its terminal tab.",
+  "author": {
+    "name": "Tiger Wang"
+  },
+  "homepage": "https://github.com/hecool108/claude-session-bar",
+  "repository": "https://github.com/hecool108/claude-session-bar"
+}
